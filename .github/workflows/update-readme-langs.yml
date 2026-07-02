@@ -13,19 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Update language section
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
+            const fs = require("fs");
+
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
             const { data: langs } = await github.rest.repos.listLanguages({ owner, repo });
             const entries = Object.entries(langs);
             if (entries.length === 0) {
-              core.info("No language data found.");
+              core.setFailed("No language data found from GitHub API.");
               return;
             }
 
@@ -41,25 +43,35 @@ jobs:
               return "█".repeat(filled) + "░".repeat(len - filled);
             };
 
-            const lines = top.map(l => `- ${l.name.padEnd(12)} ${bar(l.pct)} ${l.pct.toFixed(1)}%`);
+            const lines = top.map(
+              (l) => `- ${l.name.padEnd(12)} ${bar(l.pct)} ${l.pct.toFixed(1)}%`
+            );
 
-            const fs = require("fs");
             const path = "README.md";
             let readme = fs.readFileSync(path, "utf8");
 
             const start = "<!--LANGS_START-->";
             const end = "<!--LANGS_END-->";
 
-            if (!readme.includes(start) || !readme.includes(end)) {
-              core.setFailed("README.md に <!--LANGS_START--> と <!--LANGS_END--> が必要です。");
+            const startIdx = readme.indexOf(start);
+            const endIdx = readme.indexOf(end);
+
+            if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
+              core.setFailed("README.md markers not found or invalid.");
               return;
             }
 
-            const newSection = `${start}\n${lines.join("\n")}\n${end}`;
-            readme = readme.replace(new RegExp(`${start}[\\s\\S]*?${end}`), newSection);
+            const before = readme.slice(0, startIdx + start.length);
+            const after = readme.slice(endIdx);
+            const replacement = `\n${lines.join("\n")}\n`;
+            const updated = before + replacement + after;
 
-            fs.writeFileSync(path, readme, "utf8");
-            core.info("README language section updated.");
+            if (updated === readme) {
+              core.warning("Generated content is identical. No update needed.");
+            } else {
+              fs.writeFileSync(path, updated, "utf8");
+              core.info("README language section updated.");
+            }
 
       - name: Commit changes
         run: |
