@@ -18,7 +18,7 @@
 ![Skills](https://skillicons.dev/icons?i=js,ts,python,react,nextjs,nodejs,html,css)
 
 ### Tools / DevOps
-![Tools](https://skillicons.dev/icons?i=git,github,docker,linux,vscode)
+![Tools](https://skillicons.dev/icons?i=git,github,linux,vscode)
 
 ## 📌 Strengths
 - **キャッチアップ力**: 必要な技術を素早く学び、実装に落とし込む
@@ -44,8 +44,8 @@
 
 ## 📈 GitHub Stats
 <p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Hotakacchi&show_icons=true&theme=tokyonight" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Hotakacchi&show_icons=true&theme=tokyonight&count_private=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />
 </p>
 
 ## 🤝 Contact
