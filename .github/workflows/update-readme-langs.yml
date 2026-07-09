@@ -73,8 +73,8 @@ jobs:
             const path = "README.md";
             let readme = fs.readFileSync(path, "utf8");
 
-            const start = "";
-            const end = "";
+            const start = "<!--LANGS_START-->";
+            const end = "<!--LANGS_END-->";
 
             const startIdx = readme.indexOf(start);
             const endIdx = readme.indexOf(end);
