@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5 # ← v4 から v5 にアップデート
 
       - name: Update language section
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8 # ← v7 から v8 にアップデート
         with:
           script: |
             const fs = require("fs");
