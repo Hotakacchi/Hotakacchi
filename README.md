@@ -22,8 +22,5 @@
   <img height="160" src="https://github-readme-stats-tawny-eight-28.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hotakacchi&theme=tokyonight" />
 </p>
 
-## 🤝 Contact
-- ご連絡は GitHub Issue / SNS / discord からお願いします
-
 ---
 最後まで読んでいただき、ありがとうございます。
