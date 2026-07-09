@@ -31,9 +31,9 @@
 - CI/CD・コンテナなど開発基盤の理解向上
 
 ## 📈 GitHub Stats
-<p>
+<p align="center">
   <img height="160" src="https://github-readme-stats-tawny-eight-28.vercel.app/api?username=Hotakacchi&show_icons=true&theme=tokyonight&count_private=true" />
-  <img height="160" src="https://github-readme-stats-tawny-eight-28.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />
+  <img height="160" src="https://github-readme-stats-tawny-eight-28.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hotakacchi&theme=tokyonight" />
 </p>
 
 ## 🤝 Contact
