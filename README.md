@@ -34,7 +34,7 @@
 
 ## 🛠 Language Usage (Auto Updated)
 <!--LANGS_START-->
-- Loading...
+- Python       ████████████████████ 100.0%
 <!--LANGS_END-->
 
 ## 📈 GitHub Stats
