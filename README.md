@@ -22,7 +22,7 @@
   <img height="160" src="https://github-readme-stats-tawny-eight-28.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hotakacchi&theme=tokyonight" />
 </p>
 
-## Trorhy
+## 🏆Trorhy
 ![trophy](https://github-profile-trophy.vercel.app/?username=Hotakacchi&theme=onedark&column=7)
 
 ---
