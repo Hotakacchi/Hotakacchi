@@ -23,7 +23,7 @@
 </p>
 
 ## Trorhy
-[![trophy](https://github-profile-trophy.vercel.app/?username=Hotakacchi&theme=onedark&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+![trophy](https://github-profile-trophy.vercel.app/?username=Hotakacchi&theme=onedark&column=7)
 
 ---
 最後まで読んでいただき、ありがとうございます。
