@@ -18,6 +18,7 @@ jobs:
       - name: Update language section
         uses: actions/github-script@v8 # ← v7 から v8 にアップデート
         with:
+          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           script: |
             const fs = require("fs");
             const owner = context.repo.owner;
