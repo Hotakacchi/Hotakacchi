@@ -44,8 +44,8 @@
 
 ## 📈 GitHub Stats
 <p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Hotakacchi&show_icons=true&theme=tokyonight&count_private=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />
+  <img height="160" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Hotakacchi&show_icons=true&theme=tokyonight&count_private=true" />
+  <img height="160" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Hotakacchi&layout=compact&theme=tokyonight&count_private=true" />
 </p>
 
 ## 🤝 Contact
