@@ -30,18 +30,6 @@
 - テストコードの拡充（品質の安定化）
 - CI/CD・コンテナなど開発基盤の理解向上
 
-## 🛠 Language Usage (Auto Updated)
-<!--LANGS_START-->
-- JavaScript   ████████████████░░░░ 81.0%
-- Python       █░░░░░░░░░░░░░░░░░░░ 6.7%
-- SCSS         █░░░░░░░░░░░░░░░░░░░ 6.5%
-- CSS          ░░░░░░░░░░░░░░░░░░░░ 2.4%
-- TypeScript   ░░░░░░░░░░░░░░░░░░░░ 1.9%
-- HTML         ░░░░░░░░░░░░░░░░░░░░ 1.3%
-- Batchfile    ░░░░░░░░░░░░░░░░░░░░ 0.0%
-- Shell        ░░░░░░░░░░░░░░░░░░░░ 0.0%
-<!--LANGS_END-->
-
 ## 📈 GitHub Stats
 <p>
   <img height="160" src="https://github-readme-stats-tawny-eight-28.vercel.app/api?username=Hotakacchi&show_icons=true&theme=tokyonight&count_private=true" />
