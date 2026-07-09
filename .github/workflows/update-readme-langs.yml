@@ -13,27 +13,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5 # ← v4 から v5 にアップデート
+        uses: actions/checkout@v5
 
       - name: Update language section
-        uses: actions/github-script@v8 # ← v7 から v8 にアップデート
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           script: |
             const fs = require("fs");
             const owner = context.repo.owner;
 
-            // 1. 公開リポジトリを一覧取得（最大100個）
-            const repos = await github.paginate(github.rest.repos.listForUser, {
-              username: owner,
-              type: "owner",
+            // 1. プライベート含むすべてのリポジトリを一覧取得
+            const repos = await github.paginate(github.rest.repos.listForAuthenticatedUser, {
+              visibility: "all",
+              affiliation: "owner",
               per_page: 100
             });
 
             // 2. 各リポジトリの言語データを合算
             const langs = {};
             for (const repo of repos) {
-              // フォークしたリポジトリや、このプロフィールリポジトリ自身、空のリポジトリは除外
               if (repo.fork || repo.name === owner || repo.size === 0) continue;
 
               try {
@@ -41,6 +40,9 @@ jobs:
                   owner,
                   repo: repo.name,
                 });
+                
+                core.info(`Repository [${repo.name}] (${repo.private ? 'Private' : 'Public'}): ${JSON.stringify(data)}`);
+                
                 for (const [lang, bytes] of Object.entries(data)) {
                   langs[lang] = (langs[lang] || 0) + bytes;
                 }
@@ -54,6 +56,8 @@ jobs:
               core.setFailed("No language data found across your repositories.");
               return;
             }
+
+            core.info(`Total aggregated languages (bytes): ${JSON.stringify(langs)}`);
 
             const total = entries.reduce((sum, [, bytes]) => sum + bytes, 0);
             const top = entries
@@ -74,8 +78,8 @@ jobs:
             const path = "README.md";
             let readme = fs.readFileSync(path, "utf8");
 
-            const start = "<!--LANGS_START-->";
-            const end = "<!--LANGS_END-->";
+            const start = "";
+            const end = "";
 
             const startIdx = readme.indexOf(start);
             const endIdx = readme.indexOf(end);
