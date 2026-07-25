@@ -1,7 +1,9 @@
+<p align="center">
 [ ![Hotakacchi](https://komarev.com/ghpvc/?username=Hotakacchi)
 ](https://github.com/Hotakacchi/Hotakacchi/)
 [![](https://img.shields.io/github/followers/Hotakacchi?label=follow&logo=github&style=flat)
 ](https://github.com/Hotakacchi)  
+</p>
 
 # Hi there 👋 I'm Hotakacchi
 
@@ -28,7 +30,7 @@
 </p>
 
 ## 🏆Trorhy
-![trophy](https://github-profile-trophy.vercel.app/?username=Hotakacchi&theme=onedark&column=7)
+![trophy](https://trophygithubreadmelang.cybee.dpdns.org/?username=hotakacchi&theme=dark)
 
 ---
 最後まで読んでいただき、ありがとうございます。
