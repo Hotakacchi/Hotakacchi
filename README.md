@@ -1,8 +1,6 @@
 <p align="center">
-[ ![Hotakacchi](https://komarev.com/ghpvc/?username=Hotakacchi)
-](https://github.com/Hotakacchi/Hotakacchi/)
-[![](https://img.shields.io/github/followers/Hotakacchi?label=follow&logo=github&style=flat)
-](https://github.com/Hotakacchi)  
+<img src="https://komarev.com/ghpvc/?username=Hotakacchi" alt="GitHub" />
+<img src="https://img.shields.io/github/followers/Hotakacchi?label=follow&logo=github&style=flat" alt="hotakacchi" />
 </p>
 
 # Hi there 👋 I'm Hotakacchi
