@@ -1,3 +1,8 @@
+[ ![Hotakacchi](https://komarev.com/ghpvc/?username=Hotakacchi)
+](https://github.com/Hotakacchi/Hotakacchi/)
+[![](https://img.shields.io/github/followers/Hotakacchi?label=follow&logo=github&style=flat)
+](https://github.com/Hotakacchi)  
+
 # Hi there 👋 I'm Hotakacchi
 
 > ユーザーに届く価値を意識して、  
