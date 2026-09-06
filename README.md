@@ -16,10 +16,10 @@
 
 ## 🛠 Skills
 ### Languages / Frameworks
-![Skills](https://skillicons.dev/icons?i=js,ts,python,react,nextjs,nodejs,html,css)
+![Skills](https://skillicons.dev/icons?i=js,ts,python,react,nextjs,nodejs,html,css,discord,bots,lua)
 
 ### Tools / DevOps
-![Tools](https://skillicons.dev/icons?i=git,github,linux,vscode)
+![Tools](https://skillicons.dev/icons?i=git,github,windows,linux,vscode,powershell,obsidian,vercel,arduino,bash,kali)
 
 ## 📈 GitHub Stats
 <p align="center">
