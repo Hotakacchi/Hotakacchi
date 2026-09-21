@@ -31,6 +31,6 @@
 ![trophy](https://trophygithubreadmelang.cybee.dpdns.org/?username=hotakacchi&theme=dark)
 
 ---
-ホームページは[こちら](https://hotakacchi.verccel.app)
+ホームページは[こちら](https://hotakacchi.vercel.app)
 
 最後まで読んでいただき、ありがとうございます。
